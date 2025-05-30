@@ -3,74 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contacto y Presentación</title>
+  <title>Contacto Personal</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('imagenes/imagen de pagina web.jpg'); /* Imagen rosado y rojo */
-      background-size: cover;
-      background-position: center;
-      color: white;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
     header {
-      background-color: rgba(0, 0, 0, 0.6);
-      text-align: center;
-      padding: 30px 10px;
-    }
-    main {
-      background-color: rgba(255, 255, 255, 0.9);
-      color: #333;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 700px;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-    .whatsapp-button {
-      display: inline-block;
       background-color: #25D366;
       color: white;
-      padding: 10px 20px;
-      margin-top: 15px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
+      padding: 20px;
     }
-    .whatsapp-button:hover {
-      background-color: #128C7E;
+    main {
+      padding: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe57;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Bienvenid@ a mi página</h1>
-    <p>Conecta conmigo fácilmente</p>
+    <h1>Hola, soy [Tu Nombre]</h1>
+    <p>¡Contáctame por WhatsApp!</p>
   </header>
 
   <main>
-    <h2>Sobre mí</h2>
-    <p>Hola, soy [Tu Nombre]. Me encanta la creatividad, los colores y conectar con personas.</p>
+    <img src="tu-imagen.jpg" alt="Imagen personal o de tu negocio">
 
-    <h2>Contáctame por WhatsApp</h2>
-    <p>Haz clic en el botón para enviarme un mensaje directo:</p>
-    <a 
-      class="whatsapp-button" 
-      href="https://wa.me/593999999999" 
-      target="_blank"
-    >
-      💬 Enviar mensaje
+    <!-- Cambia 593XXXXXXXX por tu número con código de país -->
+    <a class="whatsapp-btn" 
+       href="https://wa.me/593XXXXXXXX?text=Hola%2C%20quiero%20más%20información" 
+       target="_blank">
+      Envíame un mensaje por WhatsApp
     </a>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Tu Nombre | Todos los derechos reservados</p>
-  </footer>
-
 </body>
 </html>
+
