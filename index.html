@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>YESSLIE</title>
+  <title>BROWS - Página Personal</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f1f1f1;
       margin: 0;
       padding: 0;
-      text-align: center;
     }
     header {
       background-color: #25D366;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #1ebe57;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
       padding: 20px;
+      text-align: center;
     }
     img {
       max-width: 100%;
@@ -27,7 +44,7 @@
       border-radius: 10px;
       margin: 20px 0;
     }
-    .whatsapp-btn, .sobre-btn {
+    .whatsapp-btn {
       background-color: #25D366;
       color: white;
       padding: 15px 25px;
@@ -35,35 +52,51 @@
       font-size: 18px;
       border-radius: 8px;
       display: inline-block;
-      margin: 10px;
+      margin-top: 15px;
     }
-    .whatsapp-btn:hover, .sobre-btn:hover {
+    .whatsapp-btn:hover {
       background-color: #1ebe57;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ddd;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Hola, soy YESSLIE C</h1>
-    <p>¡Contáctame por WhatsApp!</p>
+    <h1>BROWS</h1>
+    <p>Bienvenid@ a mi página personal</p>
   </header>
 
-  <main>
-    <img src="imagenes/marca.png" alt="YESSLIE C">
+  <!-- Menú de navegación -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="sobre.html">Sobre mí</a>
+    <a href="https://wa.me/593XXXXXXXX?text=Hola%2C%20quiero%20más%20información" target="_blank">Contacto</a>
+  </nav>
 
-    <!-- Botón WhatsApp -->
+  <main>
+    <img src="imagenes/marca.png" alt="Imagen de BROWS">
+
+    <h2 id="servicios">Nuestros Servicios</h2>
+    <p>Ofrecemos diseño de cejas, cuidado facial y asesoría de imagen personalizada para resaltar tu belleza natural.</p>
+
+    <!-- Botón de WhatsApp -->
     <a class="whatsapp-btn" 
-       href="https://wa.me/593XXXXXXXX?text=Hola%2C%20quiero%20más%20información" 
+       href="https://wa.me/593XXXXXXXX?text=Hola%2C%20quiero%20más%20información%20sobre%20tus%20servicios" 
        target="_blank">
       Envíame un mensaje por WhatsApp
     </a>
-
-    <!-- Botón "Sobre mí" que abre la otra página -->
-    <a class="sobre-btn" href="sobre.html">
-      Sobre mí
-    </a>
   </main>
+
+  <footer>
+    <p>&copy; 2025 BROWS - Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
